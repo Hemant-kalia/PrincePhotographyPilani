@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #343a40; /* Dark background for header */
+    color: white; /* White text color */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.back-button {
+    padding: 10px 20px; /* Padding for button */
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffcc00; /* Button color */
+    color: #333; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-button:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+#category-gallery {
+    padding: 20px; /* Padding around the gallery */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between grid items */
+}
+
+.gallery-grid img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
